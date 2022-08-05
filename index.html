@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML5 Семантичні елементи</title>
+    <link rel="stylesheet" href="styles/main.css">
+    <link rel="stylesheet" href="styles/normalize.css">
+</head>
+    <body>
+        <!-- MAIN -->
+        <main>
+            <h1>HTML5 Семантичні елементи</h1>
+        <!-- EXAMPLES -->
+            <section class="examples">
+                <p>Семантичний елемент чітко описує його значення як для браузера, так і <br>
+                для розробника.
+                </p>
+                <!-- Way to show tegs as a text -->
+                <p> Приклади не семантичних елементів: &ltdiv&gt і &ltspan&gt - нічого не говорить <br>
+                про його вміст.
+                </p>
+                <!-- Way to show tegs as a text -->
+                <p> Приклади семантичних елементів:  &ltform&gt , &lttable&gt  &ltarticle&gt - чітко <br>
+                визначає його зміст.
+                </p>  
+            </section>
+        
+                <!-- BROWSERS -->
+            <section class="browser">
+                <h2>Підтримка браузерів</h2>
+                <img src="img/image.png" alt="browsers" width="200px">
+                <p>Семантичні елементи HTML5 підтримуються у всіх сучасних браузерах.</p>
+                <p>Крім того, ви можете "навчити" старих браузерів, як обробляти "невідомі<br>
+                елементи".</p>
+                <p>Прочитайте про це в <a href="https://www.blogger.com/onboarding"> підтримці браузера HTML5 .</a></p>
+            </section>
+        
+            <!-- NEW ELEMENTS IN HTML 5-->
+            <section class="elements">
+                <h3>Нові семантичні елементи в HTML5 </h3>
+                <p>HTML5 пропонує нові семантичні елементи для визначення різних частин <br>
+                веб-сторінки: </p>
+                <ul>
+                    <li>&ltsection&gt</li>
+                    <li>&ltarticle&gt</li>
+                    <li>&ltheader&gt</li>
+                    <li>&ltfooter&gt</li>
+                </ul>
+            </section>
+            <section class="section">
+                 <h2>HTML5 &ltsection&gt елемент</h2>
+                 <p>Елемент &ltsection&gt визначає розділ в документі <br>
+                    Згідно з документацією в3к'с HTML5: "розділ представляє собою <br>
+                    тематичну угруповання контенту, зазвичай з заголовком". <br>
+                    Домашня сторінка зазвичай може бути розділена на розділи для <br>
+                    ознайомлення, змісту і контактної інформаці </p>
+                    <p> Приклад</p>
+                    <code>&ltsection&gt
+                        &lth1&gt WWF &l/h1&gt
+                        &ltp&gt The Word Wide Fund for Nature(WWF) is....&ltp&gt 
+                        &lt/section&gt
+                    </code>
+            </section>
+            <!--  ABOUT ARCTICLE -->
+            <section class="article">
+                <h3>HTML5 &ltarticle&gt елемент</h3>
+            <p>Елемент &ltarticle&gtвизначає незалежний, автономний вміст. <br>
+                Стаття повинна мати сенс самостійно, і вона повинна мати можливість <br>
+                читати його незалежно від іншої частини веб-сайту. <br>
+                Приклади того, де можна використовувати елемент &ltarticle&gt: <br>
+                </p>
+                <ul>
+                    <li>Повідомлення на форумі</li>
+                    <li>блозі</li>
+                    <li>Газетна стаття</li>
+                </ul>
+                <p> Приклад</p>
+                <code>                                                                                      
+                    &ltarticle&gt <br>
+                    &lth1&gt What Does WWF Do? &lt/h1&gt <br>
+                    &ltp&gt WWF's mission is to stop the degradation of our planet's enviroment, <br>
+                    and build a future in which  humans live in harmony with nature. &lt/p&gt
+                </code>
+            </section>
+            <!--  ABOUT HEADER -->
+            <section class="header">
+                 <h3>HTML5  &ltheader&gt елемент</h3>
+                 <p>
+                    Елемент &ltheader&gtзадає заголовок для документа або розділу. <br>
+                    Елемент &ltheader&gt повинен використовуватися в якості контейнера для <br>
+                    вступного змісту. <br>
+                    В одному документі може бути кілька елементів &ltheader&gt. <br>
+                    У наступному прикладі визначається заголовок для статті:
+                 </p>
+                    <p> Приклад</p>
+                    <code>
+                        &ltarticle&gt <br>
+                        &ltheader&gt <br>
+                        &lth1&gt What Does WWF Do? &lt/h1&gt  <br>
+                        &ltp&gt WWF's mission:l&t/p&gt <br>
+                        &lt/header&gt <br>
+                        &ltp&gt WWF's mission is to stop the degradation of our planet's enviroment, <br>
+                        and build a future in which  humans live in harmony with nature. &lt/p&gt
+                    </code>
+            </section>
+            <!--  ABOUT FOOTER -->
+            <section class="footer">
+                <h3>HTML5  &ltfooter&gt елемент</h3>
+                <p>Елемент &ltfooter&gtвказує нижній колонтитул для документа або розділу. <br>
+                    Нижній колонтитул зазвичай містить автора документа, інформацію про <br>
+                    авторське право, посилання на умови використання, контактні дані і т.д. <br>
+                    В одному документі може бути кілька елементів &ltfooter&gt.</p>
+                    <code>
+                        &ltfooter&gt <br>
+                        &ltp&gt Posted by: Hege Refsnes &lt/p&gt 
+                        &ltp&gt Contact information  &lta href="mailto:someone@html5css.ru"&gt  <br>
+                        someone@html5css.ru &lt/a&gt./p&gt <br>
+                        &lt/footer&gt
+                    </code>
+            </section>
+       
+       
+       
+        </main>
+        <!-- FOOTER -->
+        <footer> 
+            
+                <a href="pages/second_resume.html" target="_blank"> <img src="img/cv.png" alt="click"   width="650px"></a>
+             
+             <h3>First resume</h3>
+             <!-- IFRAME FIRST RESUME -->
+            <iframe src="first_resume/index.html" frameborder="0" width="650px" height="650px"></iframe>
+             <!-- IFRAME YOUTUBE -->
+            <h3>YOUTUBE</h3>
+            <iframe width="650px" height="650px" src="https://www.youtube.com/embed/Ph8wDDlOxHc" 
+                    title="Топ 20 запитань на співбесіді Junior Frontend Developer" frameborder="0" 
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+                    allowfullscreen></iframe>
+        </footer>
+    </body>
+
+</html>

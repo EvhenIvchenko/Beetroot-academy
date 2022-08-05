@@ -1,0 +1,39 @@
+body {
+    background: rgb(143, 197, 194);
+}
+main {
+    float: right;
+    width: 50%;
+    border: 10px solid rgb(75, 49, 73);
+    border-radius: 20px;
+}
+
+    h1,h2 ,h3 {
+     color: rgb(231, 32, 18);
+     text-shadow: 1px 1px 1px rgb(67, 28, 158);
+
+    }
+   
+    code{
+        font-weight: bold;
+        color: blue;
+    }
+/* for changing standart list style type */
+    ul li {
+        display: block;
+        position: relative;
+        
+      }
+      
+      ul li:before {
+        content: "";
+        position: absolute;
+        top: 1.2em;
+        left: -30px;
+        margin-top: -.9em;
+        background: #ff0404;
+        height: 7px;
+        width: 7px;
+        border-radius: 50%;
+      }
+/* for changing standart list style type */
