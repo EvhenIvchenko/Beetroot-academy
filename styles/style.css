@@ -1,0 +1,129 @@
+body {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    background: rgb(238,174,202);
+    background: radial-gradient(circle, rgba(238,174,202,1) 0%, rgba(148,187,233,1) 100%);
+}
+main {
+    padding: 0px 100px;
+}
+strong {
+    color: rgb(255, 46, 9);
+}
+a {
+    text-decoration: none;
+    font-weight: bold;  
+}
+footer {
+    text-align: center;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-weight: bold;
+}
+.grid {
+	max-width: 1300px;
+	margin: 0 auto;
+	list-style: none;
+	text-align: center;
+}
+
+.grid li {
+	display: inline-block;
+	width: 240px;
+	margin: 0;
+	padding: 20px;
+	text-align: left;
+	position: relative;
+}
+.grid figure {
+	margin: 0;
+	position: relative;
+    border: 10px solid;
+    border-radius: 30px;
+    box-shadow: 15px 10px 4px rgb(73, 61, 61);
+}
+.grid figure img {
+	max-width: 100%;
+	display: block;
+	position: relative;
+}
+.grid figcaption {
+	position: absolute;
+	top: 0;
+	left: 0;
+	padding: 20px;
+	background: #9c488e;
+	color: #1f1a1b;
+}
+.grid figcaption h3 {
+	margin: 0;
+	padding: 0;
+	color: #fff;
+}
+
+.grid figcaption a {
+	text-align: center;
+	padding: 10px 10px;
+	border-radius: 2px;
+	display: inline-block;
+	background: #ed4e6e;
+	color: #fff;
+}
+img {
+    height: 240px;
+}
+
+
+/* Since the frame of the first elements will be overlapping the other list items, we have to make sure that the z-indexes are correct (reversed): */
+.cs-style-7 li:first-child { z-index: 6; }
+.cs-style-7 li:nth-child(2) { z-index: 5; }
+.cs-style-7 li:nth-child(3) { z-index: 4; }
+.cs-style-7 li:nth-child(4) { z-index: 3; }
+.cs-style-7 li:nth-child(5) { z-index: 2; }
+.cs-style-7 li:nth-child(6) { z-index: 1; }
+.cs-style-7 figure img {
+	z-index: 10;
+}
+/* The caption will be 100% of the figure and we’ll set the transition for the opacity, height and box-shadow. Why the box shadow? We can easily use the box shadow to create a frame around 
+the caption: */
+.cs-style-7 figcaption {
+	height: 100%;
+	width: 100%;
+	opacity: 0;
+	backface-visibility: hidden;
+	box-shadow: 0 0 0 0px #2a6ed4;
+	transition: opacity 0.3s, height 0.3s, box-shadow 0.3s;
+}
+/* On hover we will set the opacity to 1, increase the height and set the box shadow’s spread to 10 pixels: */
+.cs-style-7 figure:hover figcaption,
+.cs-style-7 figure.cs-hover figcaption {
+	opacity: 1;
+	height: 130%;
+	box-shadow: 0 0 0 10px #0f2d4b;
+}
+/* Let’s position the text elements. We want the elements to appear just after we animated the caption’s height but when we “hover out”, we want them to disappear immediately. So we’ll set 
+the transition-duration to 0 seconds for the normal state. */
+.cs-style-7 figcaption h3 {
+	margin-top: 100%;
+}
+
+.cs-style-7 figcaption h3,
+.cs-style-7 figcaption span,
+.cs-style-7 figcaption a {
+	opacity: 0;
+	transition: opacity 0s;
+}
+
+.cs-style-7 figcaption a {
+	position: absolute;
+	bottom: 20px;
+	right: 20px;
+}
+/* On hover we will make all elements appear with a delay: */
+.cs-style-7 figure:hover figcaption h3,
+.cs-style-7 figure:hover figcaption span,
+.cs-style-7 figure:hover figcaption a,
+.cs-style-7 figure.cs-hover figcaption h3,
+.cs-style-7 figure.cs-hover figcaption span,
+.cs-style-7 figure.cs-hover figcaption a {
+	transition: opacity 0.3s 0.2s;
+	opacity: 1;
+}
