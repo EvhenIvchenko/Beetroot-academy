@@ -134,3 +134,7 @@ justify-content: center;
     font-size: 18px;
     
 }
+/* POINTER */
+input:hover {
+    cursor: pointer;
+}
